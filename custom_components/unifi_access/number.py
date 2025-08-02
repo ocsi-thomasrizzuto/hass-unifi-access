@@ -48,7 +48,7 @@ class TemporaryLockRuleIntervalNumberEntity(RestoreNumber):
         self._attr_unique_id = f"door_lock_rule_interval_{self.door.id}"
         self._attr_native_value = 10
         self._attr_native_min_value = 1
-        self._attr_native_max_value = 480
+        self._attr_native_max_value = 5255999
 
     @property
     def device_info(self) -> DeviceInfo:
